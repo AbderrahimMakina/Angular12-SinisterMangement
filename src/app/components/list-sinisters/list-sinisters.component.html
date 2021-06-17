@@ -1,0 +1,18 @@
+<a routerLink="/addsinister">Add Sinister</a>
+
+<div *ngFor="let sinister of sinisters">
+    <h3>{{sinister.sinisterPlace}}</h3>
+    <p>{{sinister.sinisterStatus}}</p>
+    <p>{{sinister.declarationDate}}</p>
+    <p>{{sinister.delaiDeclaration}}</p>
+    <p>{{sinister.IndemnisationDate}}</p>
+    <p>{{sinister.sinisterDescription}}</p>
+    <p>{{sinister.chargeSinister}}</p>
+    <p>{{sinister.causeRejet}}</p>
+    <p>{{sinister.sinisterType}}</p>
+    <a routerLink="/editsinister/{{sinister.id}}">Edit sinister</a>
+
+
+
+
+</div>>

@@ -1,0 +1,33 @@
+<form (ngSubmit)="addSinister()">
+
+    <input type ="text"
+            name="sinisterPlace"
+            [(ngModel)]="sinister.sinisterPlace"
+            placeholder="Enter sinister place"/>
+
+     <input type ="text"
+            name="sinisterType"
+            [(ngModel)]="sinister.sinisterType"
+            placeholder="Enter sinister type"/>
+
+     <input type ="date"
+            name="sinisterDate"
+            [(ngModel)]="sinister.sinisterDate"
+            placeholder="Enter sinisterDate"/>
+
+
+    <textarea type ="text"
+            name="sinisterDescription"
+            [(ngModel)]="sinister.sinisterDescription"
+            placeholder="Enter sinisterDescription"></textarea>
+
+    
+    <button type ="submit"> Add sinister</button>
+    
+    <button *ngIf="sinister.id" (click)="deleteSinister(sinister.id)">Delete</button>
+            
+            
+
+            
+
+</form>
